@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+  content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de taxas de maquininha</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calculadora">
+  
+  <label for="maquininha"></label>
+  <select id="maquininha">
+    <option 
+    value = ""disabled selected > SELECIONE UMA MAQUININHA</option>
+    <option
+    value="Sumup">Sumup</option>
+    <option 
+    value="MegaTon">Mega Ton</option>
+  </select>
+  
+  <label for="valor">Valor</label>
+  <input type="number" id="valor" placeholder="DIGITE O VALOR" required/>
+  
+  <label for="NParcelas">Número de Parcelas</label>
+  <input type="number" id="NParcelas" placeholder="DIGITE O NÚMERO DE PARCELAS"required min="1"/>
+  <button id="calcular">CALCULAR</button>
+  </div>
+  
+    
+    <!-- Exibição de Resultado-->
+  
+  <div id="resultado">
+  <p> 
+    <strong> Valor Final: </strong>
+    <span id="ValorFinal"></span>
+  </p>
+  <p> 
+  <strong> Valor Mensal:</strong>
+  <span id="ValorMes" ></span>
+  </p>
+
+  <!-- Tabela de Resultado-->
+  
+  <table border="1" id="TabelaResultado">
+  <thead> 
+    <tr>
+      <th> Valor </th>
+      <th> N° de Parcelas</th>
+      <th> Taxa de Juros</th>
+      <th> Valor Final</th>
+      <th> Por Mês</th>
+    </tr>
+    </thead>
+      
+    <tbody>
+      
+    </tbody>
+  </table>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
